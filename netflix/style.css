@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: block;
+}
+
+div#back {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(background-netflix.jpg);
+    display: flex;
+    height: 75vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+div#layout_top {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+} 
+
+div#netflix_logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-left: 250px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+div#buttons_login {
+    display: flex;
+    padding-right: 250px;
+    padding-top: 15px;
+}
+
+select#language_picker {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+}
+
+input#but {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 65px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+div#text_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    position: relative;
+    z-index: 2;
+}
+
+div#text > h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+}
+
+div#text > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
+}
+
+div#email_sign > p {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.322);
+    padding-top: 10px;
+    color: white;
+}
+
+div#inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+div#inputs > input[type = email] {
+    color: white;
+    background-color: rgba(36, 36, 65, 0.473);
+    border: solid 1px gray;
+    border-radius: 5px;
+    height: 50px;
+    width: 430px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+input#emailbut::placeholder {
+    padding-left: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+div#inputs > input[type = button] {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: red;
+    margin-left: 20px;
+    height: 50px;
+    width: 135px;
+    border: none;
+    border-radius: 5px;
+}
+
+div#gradient_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+div#gradient_box {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 90vw;
+    height: 120px;
+    padding: 50px;
+    margin-top: -60px;
+    background: linear-gradient(to left, #000412, #0D1A4B, #85102E, #0D1A4C, #000413);
+}
+
+div#linkTo {
+    padding-left: 20px;
+}
+
+div#linkTo > h1 {
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+div#linkTo > p {
+    font-size: 1em;
+    color: white;
+    padding-bottom: 10px;
+}
+
+div#linkTo > a {
+    font-size: 1.2em;
+    color: #448EF4;
+}
+
+div#bodyStuffs {
+    width: 100%;
+}
+
+div.grayLine {
+    padding: 3px;
+    background-color: gray;
+    box-shadow: inset 3px 3px 5px black;
+}
+
+div#tvBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0px 54px 0px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-size-adjust: 100%;
+}
+
+div#tvText {
+    color: white;
+}
+
+div#tvText > h1 {
+    font-size: 48px;
+}
+
+div#tvText > p {
+    font-size: 24px;
+}
+
+div#tv {
+    padding-left: 100px;
+}
+
+div#tvVideo {
+    display: block;
+    height: 260px;
+    width: 465px;
+    max-height: 54%;
+    max-width: 73%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    text-align: center;
+    text-size-adjust: 100%;
+    top: 1062px;
+    transform: matrix(1, 0, 0, 1, 84.289, -102.875);
+    unicode-bidi: isolate;
+    z-index: -1;
+}
+
+div#pcBox {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 0px 54px 0px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-size-adjust: 100%;
+}
+
+div#pc {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-right: 100px;
+}
+
+div#pcVideo {
+    display: block;
+    height: 260px;
+    width: 390px;
+    max-height: 54%;
+    max-width: 73%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    text-align: center;
+    text-size-adjust: 100%;
+    top: 1600px;
+    transform: matrix(1, 0, 0, 1, 120.289, -102.875);
+    unicode-bidi: isolate;
+    z-index: -1;
+}
+
+div#pcText {
+    color: white;
+}
+
+div#pcText > h1 {
+    font-size: 48px;
+}
+
+div#pcText > p {
+    font-size: 24px;
+}
+
+div#childsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0px 54px 0px;
+}
+
+div#childsText {
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+div#childsText > h1 {
+    font-size: 48px;
+}
+
+div#childsText > p {
+    font-size: 24px;
+}
+
+div#childsImage {
+    padding-left: 100px;
+}
+
+div#downloadBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0px 54px 0px;
+}
+
+div#imageDownload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+div#downloading {
+    display: block;
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 2px gray;
+    position: absolute;
+    color: white;
+    background-color: black;
+    transform: matrix(1, 0, 0, 1, -355.000, 150.000);
+    z-index: 2;
+}
+
+div#stranger {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+div#progressDown {
+    color: #0071E8;
+}
+
+div#miniImage {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 5px 20px 5px 20px;
+    float: left;
+    text-align: center;
+    text-size-adjust: 100%;
+}
+
+div#miniImage > img {
+    display: inline;
+    overflow-clip-margin: content -box;
+    height: 82px;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: center;
+    text-size-adjust: 100%;
+}
+
+div#textDown {
+    color: white;
+}
+
+div#textDown > h1 {
+    font-size: 48px;
+}
+
+div#textDown > p {
+    font-size: 24px;
+}
+
+div#listTitle {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.listButtons {
+    display: block;
+    margin: auto;
+    width: 1000px;
+    height: 80px;
+    background-color: rgb(45, 45, 45);
+    font-size: 20px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.listButtons:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.listButtons > h2 {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    font-weight: normal;
+}
+
+.plusButton {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+div#finalEmail {
+    display: block;
+    padding-bottom: 54px;
+}
+
+div#finalEmail > p {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+div#finalInputs {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div#finalInputs > input[type=button] {
+    background-color: red;
+    height: 50px;
+    width: 90px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+div#finalInputs > input[type=email] {
+    height: 50px;
+    width: 350px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: rgb(45, 45, 45);
+    border: solid 1px gray;
+}
+
+input#fimEmail::placeholder {
+    padding-left: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+.res {
+    display: none;
+    margin: auto;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+    padding: 15px;
+    height: auto;
+    width: 1000px;
+    margin-bottom: 15px;
+}
+
+.res > p {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    div#tvVideo {
+        display: block;
+        height: 260px;
+        width: 465px;
+        max-height: 54%;
+        max-width: 73%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        text-align: center;
+        text-size-adjust: 100%;
+        top: 891px;
+        transform: matrix(1, 0, 0, 1, 84.289, -102.875);
+        unicode-bidi: isolate;
+        z-index: -1;
+    }
+
+    div#pcVideo {
+        display: block;
+        height: 260px;
+        width: 390px;
+        max-height: 54%;
+        max-width: 73%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: absolute;
+        text-align: center;
+        text-size-adjust: 100%;
+        top: 1440px;
+        transform: matrix(1, 0, 0, 1, 120.289, -102.875);
+        unicode-bidi: isolate;
+        z-index: -1;
+    }
+}
